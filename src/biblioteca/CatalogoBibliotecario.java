@@ -14,31 +14,28 @@ public class CatalogoBibliotecario {
 		CatalogoServizio catalogoServizio = new CatalogoServizio();
 		CatalogoPersistence catalogoPersistence = new CatalogoPersistence();
 
-		Libro libro1 = new Libro("9788804686614", "1984", 1949, 328, "George Orwell", "Romanzo distopico");
-		Libro libro2 = new Libro("9788806222092", "Il piccolo principe", 1943, 96, "Antoine de Saint-Exupéry",
+		Libro libro1 = new Libro("L001", "1984", 1949, 328, "George Orwell", "Romanzo distopico");
+		Libro libro2 = new Libro("L002", "Il piccolo principe", 1943, 96, "Antoine de Saint-Exupéry", "Romanzo");
+		Libro libro3 = new Libro("L003", "Cronaca di una morte annunciata", 1981, 120, "Gabriel García Márquez",
 				"Romanzo");
-		Libro libro3 = new Libro("9788807902388", "Cronaca di una morte annunciata", 1981, 120,
-				"Gabriel García Márquez", "Romanzo");
-		Libro libro4 = new Libro("9788807882253", "Cent'anni di solitudine", 1967, 432, "Gabriel García Márquez",
-				"Romanzo");
-		Libro libro5 = new Libro("9788804668238", "Il signore degli anelli", 1954, 1137, "J.R.R. Tolkien", "Fantasy");
-		Libro libro6 = new Libro("9788804683767", "Harry Potter e la pietra filosofale", 1997, 223, "J.K. Rowling",
-				"Fantasy");
-		Libro libro7 = new Libro("9788804662946", "Il nome della rosa", 1980, 552, "Umberto Eco", "Romanzo giallo");
-		Libro libro8 = new Libro("9788804546116", "Orgoglio e pregiudizio", 1813, 416, "Jane Austen", "Romanzo");
-		Libro libro9 = new Libro("9788804671542", "Cime tempestose", 1847, 450, "Emily Brontë", "Romanzo gotico");
-		Libro libro10 = new Libro("9788806229305", "Il vecchio e il mare", 1952, 127, "Ernest Hemingway", "Romanzo");
+		Libro libro4 = new Libro("L004", "Cent'anni di solitudine", 1967, 432, "Gabriel García Márquez", "Romanzo");
+		Libro libro5 = new Libro("L005", "Il signore degli anelli", 1954, 1137, "J.R.R. Tolkien", "Fantasy");
+		Libro libro6 = new Libro("L006", "Harry Potter e la pietra filosofale", 1997, 223, "J.K. Rowling", "Fantasy");
+		Libro libro7 = new Libro("L007", "Il nome della rosa", 1980, 552, "Umberto Eco", "Romanzo giallo");
+		Libro libro8 = new Libro("L008", "Orgoglio e pregiudizio", 1813, 416, "Jane Austen", "Romanzo");
+		Libro libro9 = new Libro("L009", "Cime tempestose", 1847, 450, "Emily Brontë", "Romanzo gotico");
+		Libro libro10 = new Libro("L010", "Il vecchio e il mare", 1952, 127, "Ernest Hemingway", "Romanzo");
 
-		Rivista rivista1 = new Rivista("9772282980001", "National Geographic", 2021, 150, "mensile");
-		Rivista rivista2 = new Rivista("9770005550004", "Vanity Fair", 2023, 100, "settimanale");
-		Rivista rivista3 = new Rivista("9770216716004", "Time", 1923, 64, "settimanale");
-		Rivista rivista4 = new Rivista("9771123778007", "Scientific American", 1845, 84, "mensile");
-		Rivista rivista5 = new Rivista("9770003637001", "The New Yorker", 1925, 96, "settimanale");
-		Rivista rivista6 = new Rivista("9770393197009", "Forbes", 1917, 132, "mensile");
-		Rivista rivista7 = new Rivista("9771720065008", "Wired", 1993, 100, "semestrale");
-		Rivista rivista8 = new Rivista("9771594022007", "National Geographic Italia", 1999, 140, "mensile");
-		Rivista rivista9 = new Rivista("9770012910007", "Harvard Business Review", 1922, 80, "semestrale");
-		Rivista rivista10 = new Rivista("9770003962003", "New Scientist", 1956, 64, "settimanale");
+		Rivista rivista1 = new Rivista("R001", "National Geographic", 2021, 150, "mensile");
+		Rivista rivista2 = new Rivista("R002", "Vanity Fair", 2023, 100, "settimanale");
+		Rivista rivista3 = new Rivista("R003", "Time", 1923, 64, "settimanale");
+		Rivista rivista4 = new Rivista("R004", "Scientific American", 1845, 84, "mensile");
+		Rivista rivista5 = new Rivista("R005", "The New Yorker", 1925, 96, "settimanale");
+		Rivista rivista6 = new Rivista("R006", "Forbes", 1917, 132, "mensile");
+		Rivista rivista7 = new Rivista("R007", "Wired", 1993, 100, "semestrale");
+		Rivista rivista8 = new Rivista("R008", "National Geographic Italia", 1999, 140, "mensile");
+		Rivista rivista9 = new Rivista("R009", "Harvard Business Review", 1922, 80, "semestrale");
+		Rivista rivista10 = new Rivista("R010", "New Scientist", 1956, 64, "settimanale");
 
 		catalogoServizio.aggiungiElemento(libro1);
 		catalogoServizio.aggiungiElemento(libro2);
@@ -117,10 +114,6 @@ public class CatalogoBibliotecario {
 				modalitaRicerca = "titolo";
 				break;
 			}
-			break;
-		default:
-			System.out.println("Scelta non valida. Verrà effettuata la ricerca per titolo.");
-			modalitaRicerca = "titolo";
 			break;
 		}
 
