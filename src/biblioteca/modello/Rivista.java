@@ -38,7 +38,7 @@ public class Rivista implements ElementoBibliotecario, Serializable {
 		return numeroPagine;
 	}
 
-	public String getPeriodicità() {
+	public String getPeriodicita() {
 		return periodicità;
 	}
 }
