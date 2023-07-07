@@ -6,9 +6,11 @@ import java.util.List;
 import biblioteca.modello.ElementoBibliotecario;
 import biblioteca.modello.Libro;
 import biblioteca.modello.Rivista;
+import biblioteca.persistence.CatalogoPersistence;
 
 public class CatalogoServizio {
 	private List<ElementoBibliotecario> catalogo = new ArrayList<>();
+	private CatalogoPersistence catalogoPersistence = new CatalogoPersistence();
 
 	public void aggiungiElemento(ElementoBibliotecario elemento) {
 		catalogo.add(elemento);
@@ -49,6 +51,15 @@ public class CatalogoServizio {
 	}
 
 	public List<ElementoBibliotecario> getCatalogo() {
+		return catalogo;
+	}
+
+	public void salvataggioSuDisco(String filePath) {
+		catalogoPersistence.salvataggioSuDisco(catalogo, filePath);
+	}
+
+	public List<ElementoBibliotecario> caricamentoDaDisco(String filePath) {
+		catalogo = catalogoPersistence.caricamentoDaDisco(filePath);
 		return catalogo;
 	}
 }
