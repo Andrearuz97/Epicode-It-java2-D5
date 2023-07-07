@@ -60,7 +60,7 @@ public class CatalogoBibliotecario {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Seleziona il tipo di elemento da cercare:");
+		System.out.println("Cerchi un libro o una rivista?");
 		System.out.println("1. Libro");
 		System.out.println("2. Rivista");
 		System.out.print("Scelta: ");
